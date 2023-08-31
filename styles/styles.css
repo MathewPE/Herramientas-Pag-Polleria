@@ -1,0 +1,80 @@
+/* Variables de Css */
+:root {
+  --c-red-200: #ffb2ae;
+  --c-red-500: #b14751;
+  --c-white: #ffffff;
+  --c-black: #000000;
+  --c-red-100: #ffb2ae;
+  --c-red-300: #b14751;
+  --c-red-400: #b14751;
+  --c-red-450: #f27682;
+
+  --border: 6px;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: red;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilos de card producto */
+.cardProduct {
+  background-color: var(--c-white);
+  padding: 20px;
+
+  max-width: 140px;
+  border-radius: var(--border);
+}
+.cardProduct .cardProduct-content-picture {
+  text-align: center;
+  margin-bottom: 8px;
+}
+.cardProduct .cardProduct-picture {
+  max-width: 100px;
+  width: 100%;
+}
+
+.cardProduct .cardProduct-title {
+  color: var(--c-red-500);
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.cardProduct .cardProduct-description {
+  font-size: 12px;
+  margin-bottom: 3px;
+}
+
+.cardProduct .cardProduct-price {
+  margin-bottom: 10px;
+}
+
+.cardProduct .cardProduct-see-more {
+  color: var(--c-white);
+  background-color: var(--c-red-500);
+  border: 0;
+  padding: 6px;
+  width: 100%;
+  border-radius: var(--border);
+}
+
+/* final de estilos de card */
+
+/* Estilos de secciones de pág. principal */
+.sectionProducts {
+  padding: 40px;
+  background-color: var(--c-red-450);
+}
+
+.sectionProducts .sectionProducts-title {
+  font-size: 25px;
+  margin-bottom: 16px;
+}
