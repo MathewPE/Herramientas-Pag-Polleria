@@ -1,1 +1,0 @@
-# Maquetación de página principal
