@@ -79,7 +79,6 @@ body {
   margin-bottom: 16px;
 }
 
-
 /*Estilos Seccion Historia*/
 
 .sectionHistory {
@@ -114,7 +113,9 @@ body {
   gap: 22px;
   background-color: var(--c-red-500);
 }
-
+.footer .footer-col1 {
+  width: 100%;
+}
 .footer .footer-col1 .footer-slogan {
   color: var(--c-white);
   font-size: 20px;
@@ -127,7 +128,6 @@ body {
   font-weight: bold;
 }
 
-
 .footer .footer-col2-map {
   max-width: 320px;
   max-height: 300px;
@@ -137,10 +137,12 @@ body {
   color: var(--c-white);
   font-size: 25px;
 }
-
+.footer .footer-col3 {
+  width: 100%;
+}
 .footer .footer-col3 .footer-links li {
   list-style-type: none;
-  
+  margin-bottom: 10px;
 }
 
 .footer .footer-col3 .footer-links a {
@@ -151,4 +153,3 @@ body {
 .footer .footer-col3 .footer-links {
   margin-bottom: 14px;
 }
-
