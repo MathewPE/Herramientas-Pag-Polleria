@@ -78,3 +78,31 @@ body {
   font-size: 25px;
   margin-bottom: 16px;
 }
+
+
+/*Estilos Seccion Historia*/
+
+.sectionHistory {
+  background-color: var(--c-red-100);
+  padding: 40px;
+}
+
+.sectionHistory .sectionHistory-content {
+  display: flex;
+  gap: 22px;
+}
+
+.sectionHistory .sectionHistory-title {
+  font-size: 40px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.sectionHistory .sectionHistory-picture {
+  max-width: 400px;
+}
+
+.sectionHistory .sectionHistory-description {
+  font-size: 18px;
+}
+
