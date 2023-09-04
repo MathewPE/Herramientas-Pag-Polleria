@@ -9,13 +9,13 @@
     },
     {
       "file": "styles/styles.css",
-      "description": "Agregar variable --c-red-300",
-      "line": 237
+      "description": "Comentar codigo",
+      "line": 297
     },
     {
       "file": "styles/styles.css",
-      "description": "Comentar codigo",
-      "line": 297
+      "description": "Agregar variable --c-red-300",
+      "line": 237
     }
   ],
   "ref": "main"

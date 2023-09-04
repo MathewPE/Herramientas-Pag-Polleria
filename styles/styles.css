@@ -8,6 +8,8 @@
   --c-red-300: #b14751;
   --c-red-400: #b14751;
   --c-red-450: #f27682;
+  --c-amarillo: #ffbc0e;
+
 
   --border: 6px;
 }
@@ -66,7 +68,7 @@ body {
 
 .header .nav-links a {
   font-size: 700;
-  color: #ffffff;
+  color: var(--c-white);
 }
 
 .header .nav-links li a:hover {
@@ -319,7 +321,7 @@ body {
 
 .header .overlay a:hover,
 .header .overlay a:focus {
-  color: #ffbc0e;
+  color: var(--c-amarillo);
 }
 
 .header .overlay .close {
