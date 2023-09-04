@@ -1,85 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Página Principal</title>
-  <link rel="stylesheet" href="../../styles/styles.css">
-</head>
-<body>
-  <header>
-    <nav class="">
-      <!--<p>Aqui va el navegador</p>-->
-      <!-- <h1>Mery's</h1>
-      <a href="#">Promociones</a>
-      <a href="#">Carta</a>
-      <a href="#">Locales</a>
-      <input type="search"> -->
-    </nav>
-  </header>
-  <main class="sectionBanner">
-    <h2 class="sectionBanner-title">Restaurant Polleria</h2>
-    <h1 class="sectionBanner-logo">Mery's</h1>
-  </main>
-  <section class="sectionHistory">
-    <h3 class="sectionHistory-title">Historia</h3>
-    <div class="sectionHistory-content">
-      <img class="sectionHistory-picture" src="./img/banner-history.webp" alt="Imagen de Historia">
-      <p class="sectionHistory-description">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto doloremque dicta eaque culpa voluptate commodi ut incidunt voluptatum rem quam.
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto doloremque dicta eaque culpa voluptate commodi ut incidunt voluptatum rem quam.
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto doloremque dicta eaque culpa voluptate commodi ut incidunt voluptatum rem quam.
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto doloremque dicta eaque culpa voluptate commodi ut incidunt voluptatum rem quam.
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto doloremque dicta eaque culpa voluptate commodi ut incidunt voluptatum rem quam.
-      </p>
-    </div>
-  </section>
-
-  <!-- Sección de Promociones -->
-  <section class="sectionProducts">
-    <h3 class="sectionProducts-title">Promociones</h3>
-    <!-- Card de Producto -->
-    <article class="cardProduct">
-      <div class="cardProduct-content-picture">
-        <img class="cardProduct-picture"
-        src="./img/plato-pollo-a-la-brasa.png" alt="Foto del plato">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="../../styles/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img src="img/bannerpolleria.jpeg" alt="Logo de la polleria" />
       </div>
-      <h3 class="cardProduct-title">Pollo Oferta 1</h3>
-      <p class="cardProduct-description">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-      <p class="cardProduct-price">s/. 10.00</p>
-      <button class="cardProduct-see-more">
-        Ver Producto
-      </button>
-    </article>
-  </section>
-  <footer class="footer">
-    <div class="footer-col1">
-      <p class="footer-slogan">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, blanditiis!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, blanditiis!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, blanditiis!
-      </p>
-      <p class="footer-logo">Mery's</p>
-    </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#">Promociones</a></li>
+          <li><a href="#">Carta</a></li>
+          <li><a href="#">Locales</a></li>
+        </ul>
+      </nav>
+      <a class="btn" href="#"><button>Contacto</button></a>
 
-    <div class="footer-col2">
-      <iframe class="footer-col2-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3902.418258462329!2d-76.99943952398415!3d-12.014700241306496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c592eff597f1%3A0x43a78a98840c57ac!2sAv.%2013%20de%20Enero%201002%2C%20San%20Juan%20de%20Lurigancho%2015427!5e0!3m2!1ses!2spe!4v1693454552606!5m2!1ses!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
+      <a onclick="openNav()" class="menu" href="#"><button>Menú</button></a>
 
-    <div class="footer-col3">
-      <h4 class="footer-title">Enlaces</h4>
-      <ul class="footer-links">
-        <li class="footer-link">
-          <a href="#">Libro de reclamaciones</a>
-        </li>
-        <li class="footer-link">
-          <a href="#">Politica</a>
-        </li>
-      </ul>
-      <!-- <h4 class="footer-title">Redes Sociales</h4>
+      <div id="mobile-menu" class="overlay">
+        <a onclick="closeNav()" href="#" class="close">&times;</a>
+        <div class="overlay-content">
+          <a href="#">Promociones</a>
+          <a href="#">Carta</a>
+          <a href="#">Locales</a>
+        </div>
+      </div>
+    </header>
+    <main class="sectionBanner">
+      <h2 class="sectionBanner-title">Restaurant Polleria</h2>
+      <h1 class="sectionBanner-logo">Mery's</h1>
+    </main>
+    <section class="sectionHistory">
+      <h3 class="sectionHistory-title">Historia</h3>
+      <div class="sectionHistory-content">
+        <img
+          class="sectionHistory-picture"
+          src="./img/banner-history.webp"
+          alt="Imagen de Historia"
+        />
+        <p class="sectionHistory-description">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto
+          doloremque dicta eaque culpa voluptate commodi ut incidunt voluptatum
+          rem quam. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Architecto doloremque dicta eaque culpa voluptate commodi ut incidunt
+          voluptatum rem quam. Lorem ipsum dolor sit, amet consectetur
+          adipisicing elit. Architecto doloremque dicta eaque culpa voluptate
+          commodi ut incidunt voluptatum rem quam. Lorem ipsum dolor sit, amet
+          consectetur adipisicing elit. Architecto doloremque dicta eaque culpa
+          voluptate commodi ut incidunt voluptatum rem quam. Lorem ipsum dolor
+          sit, amet consectetur adipisicing elit. Architecto doloremque dicta
+          eaque culpa voluptate commodi ut incidunt voluptatum rem quam.
+        </p>
+      </div>
+    </section>
+
+    <!-- Sección de Promociones -->
+    <section class="sectionProducts">
+      <h3 class="sectionProducts-title">Promociones</h3>
+      <!-- Card de Producto -->
+      <article class="cardProduct">
+        <div class="cardProduct-content-picture">
+          <img
+            class="cardProduct-picture"
+            src="./img/plato-pollo-a-la-brasa.png"
+            alt="Foto del plato"
+          />
+        </div>
+        <h3 class="cardProduct-title">Pollo Oferta 1</h3>
+        <p class="cardProduct-description">
+          Lorem ipsum, dolor sit amet consectetur adipisicing.
+        </p>
+        <p class="cardProduct-price">s/. 10.00</p>
+        <button class="cardProduct-see-more">Ver Producto</button>
+      </article>
+    </section>
+    <footer class="footer">
+      <div class="footer-col1">
+        <p class="footer-slogan">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo,
+          blanditiis! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Nemo, blanditiis! Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Nemo, blanditiis!
+        </p>
+        <p class="footer-logo">Mery's</p>
+      </div>
+
+      <div class="footer-col2">
+        <iframe
+          class="footer-col2-map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3902.418258462329!2d-76.99943952398415!3d-12.014700241306496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c592eff597f1%3A0x43a78a98840c57ac!2sAv.%2013%20de%20Enero%201002%2C%20San%20Juan%20de%20Lurigancho%2015427!5e0!3m2!1ses!2spe!4v1693454552606!5m2!1ses!2spe"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+
+      <div class="footer-col3">
+        <h4 class="footer-title">Enlaces</h4>
+        <ul class="footer-links">
+          <li class="footer-link">
+            <a href="#">Libro de reclamaciones</a>
+          </li>
+          <li class="footer-link">
+            <a href="#">Politica</a>
+          </li>
+        </ul>
+        <!-- <h4 class="footer-title">Redes Sociales</h4>
       <img src="#" alt="Facebook"> -->
-    </div>
-  </footer>
-</body>
+      </div>
+    </footer>
+  </body>
 </html>
