@@ -23,6 +23,123 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* ------------------- */
+/* ---- NAVBAR ------- */
+/* ------------------- */
+.headerContainer {
+  background-color: var(--c-red-300);
+}
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 85px;
+}
+
+.header .logo {
+  cursor: pointer;
+  margin-right: auto;
+}
+
+.header .logo img {
+  height: 70px;
+  width: auto;
+  transition: all 0.3s;
+}
+.header .logo img:hover {
+  transform: scale(1.2);
+}
+
+.header .nav-links {
+  list-style: none;
+}
+
+.header .nav-links li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.header .nav-links li:hover,
+.overlay a:hover {
+  transform: scale(1.1);
+}
+
+.header .nav-links a {
+  font-size: 700;
+  color: #ffffff;
+}
+
+.header .nav-links li a:hover {
+  color: var(--c-black);
+}
+
+.header .btn button,
+.header .menu button {
+  margin-left: 20px;
+  font-weight: 700;
+  color: #b14751;
+  padding: 9px 25px;
+  background: var(--c-white);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.header .btn button:hover,
+.header .menu button:hover {
+  background-color: var(--c-white);
+  color: var(--c-black);
+  transform: scale(1.1);
+}
+
+/* ----------------------- */
+/* ---- FIN NAVBAR ------- */
+/* ----------------------- */
+
+/* --------------------------- */
+/* ---- SECCIÓN BANNER ------- */
+/* --------------------------- */
+.sectionBanner {
+  background-image: url("../pages/main/img/banner-pollo.png");
+  height: 90vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.sectionBanner .sectionBanner-title {
+  font-size: 55px;
+  color: var(--c-white);
+  margin-bottom: 1rem;
+}
+
+.sectionBanner .sectionBanner-logo {
+  font-size: 55px;
+  background-color: var(--c-red-100);
+  padding: 10px 18px;
+  border-radius: var(--border);
+  color: var(--c-red-500);
+}
+
+/* ---------------------------------- */
+/* ---- FIN DE SECCIÓN BANNER ------- */
+/* ---------------------------------- */
+
+/* ---------------------------------- */
+/* ---- SECCIONES & NAVBAR ---------- */
+/* ---------------------------------- */
+.contentSection {
+  max-width: 1000px;
+  margin: auto;
+}
+
 /* Estilos de card producto */
 .cardProduct {
   background-color: var(--c-white);
@@ -67,30 +184,6 @@ body {
 
 /* final de estilos de card */
 
-.sectionBanner {
-  background-image: url("../pages/main/img/banner.png");
-  height: 100vh;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.sectionBanner .sectionBanner-title {
-  font-size: 35px;
-  color: var(--c-white);
-  margin-bottom: 1rem;
-}
-
-.sectionBanner .sectionBanner-logo {
-  font-size: 55px;
-  background-color: var(--c-red-100);
-  padding: 10px 18px;
-  border-radius: var(--border);
-  color: var(--c-red-500);
-}
-
 /* Estilos de secciones de pág. principal */
 .sectionProducts {
   padding: 40px;
@@ -103,9 +196,10 @@ body {
 }
 
 /*Estilos Seccion Historia*/
-
-.sectionHistory {
+.sectionHistoryContainer {
   background-color: var(--c-red-100);
+}
+.sectionHistory {
   padding: 40px;
 }
 
@@ -177,77 +271,6 @@ body {
 
 .footer .footer-col3 .footer-links {
   margin-bottom: 14px;
-}
-
-/*Navbar*/
-.header {
-  background-color: var(--c-red-300);
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  height: 85px;
-  padding: 5px 10%;
-}
-
-.header .logo {
-  cursor: pointer;
-  margin-right: auto;
-}
-
-.header .logo img {
-  height: 70px;
-  width: auto;
-  transition: all 0.3s;
-}
-.header .logo img:hover {
-  transform: scale(1.2);
-}
-
-.header .nav-links {
-  list-style: none;
-}
-
-.header .nav-links li {
-  display: inline-block;
-  padding: 0 20px;
-}
-
-.header .nav-links li:hover,
-.overlay a:hover {
-  transform: scale(1.1);
-}
-
-.header .nav-links a {
-  font-size: 700;
-  color: #ffffff;
-}
-
-.header .nav-links li a:hover {
-  color: var(--c-black);
-}
-
-.menu {
-  display: none;
-}
-
-.header .btn button,
-.header .menu button {
-  margin-left: 20px;
-  font-weight: 700;
-  color: #b14751;
-  padding: 9px 25px;
-  background: var(--c-white);
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: all 0.3s ease 0s;
-}
-
-.header .btn button:hover,
-.header .menu button:hover {
-  background-color: var(--c-white);
-  color: var(--c-black);
-  transform: scale(1.1);
 }
 
 /* @media screen and (max-width: 800px) {
