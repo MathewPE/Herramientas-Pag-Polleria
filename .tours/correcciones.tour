@@ -1,0 +1,22 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "Correcciones",
+  "steps": [
+    {
+      "file": "styles/styles.css",
+      "description": "Agregar Variable",
+      "line": 222
+    },
+    {
+      "file": "styles/styles.css",
+      "description": "Agregar variable --c-red-300",
+      "line": 237
+    },
+    {
+      "file": "styles/styles.css",
+      "description": "Comentar codigo",
+      "line": 297
+    }
+  ],
+  "ref": "main"
+}
