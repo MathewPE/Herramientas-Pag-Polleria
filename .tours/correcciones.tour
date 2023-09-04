@@ -4,18 +4,18 @@
   "steps": [
     {
       "file": "styles/styles.css",
-      "description": "Agregar Variable",
-      "line": 222
-    },
-    {
-      "file": "styles/styles.css",
-      "description": "Comentar codigo",
-      "line": 297
-    },
-    {
-      "file": "styles/styles.css",
-      "description": "Agregar variable --c-red-300",
-      "line": 237
+      "description": "Eliminar variable y usar --c-red-500",
+      "line": 8,
+      "selection": {
+        "start": {
+          "line": 4,
+          "character": 3
+        },
+        "end": {
+          "line": 4,
+          "character": 14
+        }
+      }
     }
   ],
   "ref": "main"
