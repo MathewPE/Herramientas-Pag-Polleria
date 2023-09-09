@@ -5,9 +5,9 @@
   --c-white: #ffffff;
   --c-black: #000000;
   --c-red-100: #ffb2ae;
-  --c-red-300: #b14751;
   --c-red-450: #f27682;
   --c-amarillo: #ffbc0e;
+  --c-verde: #008000;
 
   --border: 6px;
 }
@@ -27,7 +27,7 @@ body {
 /* ---- NAVBAR ------- */
 /* ------------------- */
 .headerContainer {
-  background-color: var(--c-red-300);
+  background-color: var(--c-red-500);
 }
 .header {
   display: flex;
@@ -37,35 +37,38 @@ body {
 }
 
 .header .logo {
-  color: var(--c-white);
+  color: var(--c-amarillo);
+  -webkit-text-stroke: 2px var(--c-verde);
+  font-size: 20px;
+  text-decoration-line: underline;
 }
 
-.header .nav-links {
+.header .nav {
   list-style: none;
 }
 
-.header .nav-links li {
+.header .nav li {
   display: inline-block;
   padding: 0 20px;
 }
 
-.header .nav-links li:hover,
+.header .nav li:hover,
 .overlay a:hover {
   transform: scale(1.1);
 }
 
-.header .nav-links a {
+.header .nav a {
   font-size: 700;
   color: var(--c-white);
 }
 
-.header .nav-links li a:hover {
+.header .nav li a:hover {
   color: var(--c-black);
 }
 
 .header .btn button {
   font-weight: 700;
-  color: #b14751;
+  color: var(--c-red-500);
   padding: 9px 25px;
   background: var(--c-white);
   border: none;
@@ -95,8 +98,9 @@ body {
 /* ---- SECCIÓN BANNER ------- */
 /* --------------------------- */
 .sectionBanner {
-  background-image: url("../pages/main/img/banner-pollo.png");
+  background-image: url("../pages/main/img/banner-pollo2.jpg");
   height: 90vh;
+  
 
   display: flex;
   align-items: center;
@@ -110,16 +114,16 @@ body {
 
 .sectionBanner .sectionBanner-title {
   font-size: 55px;
-  color: var(--c-white);
+  color: var(--c-red-500);
+  -webkit-text-stroke: 1px var(--c-white);
   margin-bottom: 1rem;
 }
 
 .sectionBanner .sectionBanner-logo {
-  font-size: 55px;
-  background-color: var(--c-red-100);
-  padding: 10px 18px;
-  border-radius: var(--border);
-  color: var(--c-red-500);
+  color: var(--c-amarillo);
+  -webkit-text-stroke: 2px var(--c-verde);
+  font-size: 100px;
+  
 }
 
 /* ---------------------------------- */
@@ -181,17 +185,21 @@ body {
 /* Estilos de secciones de pág. principal */
 .sectionProducts {
   padding: 40px;
-  background-color: var(--c-red-450);
+  background-image: url(../pages/main/img/fondo-madera-madera-textura-patron-wallpaper-concepto.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .sectionProducts .sectionProducts-title {
-  font-size: 25px;
+  font-size: 40px;
   margin-bottom: 16px;
+  -webkit-text-stroke: 1px var(--c-white);
 }
 
 /*Estilos Seccion Historia*/
 .sectionHistoryContainer {
-  background-color: var(--c-red-100);
+  background-image: url(../pages/main/img/fondo-diseno-textura-simple-blanco.jpg);
 }
 .sectionHistory {
   padding: 40px;
@@ -199,7 +207,7 @@ body {
 
 .sectionHistory .sectionHistory-content {
   display: flex;
-  gap: 22px;
+  gap: 50px;
 }
 
 .sectionHistory .sectionHistory-title {
@@ -222,7 +230,7 @@ body {
 .footer {
   padding: 40px;
   display: flex;
-  gap: 22px;
+  gap: 50px;
   background-color: var(--c-red-500);
 }
 .footer .footer-col1 {
@@ -289,7 +297,7 @@ body {
   z-index: 1;
   left: 0;
   top: 0;
-  background-color: var(--c-red-300);
+  background-color: var(--c-red-500);
   overflow: hidden;
   transition: all 0.3s ease 0s;
 }
@@ -334,3 +342,24 @@ body {
     right: 35px;
   }
 } */
+/*Sección Locales*/
+.location .location-title {
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.location .location-titles {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.location .list-item{
+  list-style: none;
+  margin-bottom: 25px;
+}
+
+.location .location-list .location-map1{
+  margin-left: 50%;
+}
